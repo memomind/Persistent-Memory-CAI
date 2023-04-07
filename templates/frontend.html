@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>History Agent</title>
+</head>
+<style>
+    body {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+    }
+    h1,h2{
+        text-align: center;
+    }
+
+    p {
+        padding-left: 20%;
+        padding-right: 20%;
+        text-align: center;
+    }
+
+    #agent-indicator {
+        position: absolute;
+        right: 40%;
+        bottom: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #arrow {
+        line-height: 80px;
+        font-size: 80px;
+        height: 80px;
+        margin-left: 20px;
+    }
+
+    #try-out {
+        font-size: 200%;
+    }
+</style>
+<body>
+<div id="header">
+    <h1>Welcome to the smartest History Agent out there!</h1>
+    <h2>I have all the answers to your questions about famous historic figures.</h2>
+</div>
+<p>This project aims to showcase how a conversational agent could be used as an interface to explore a dataset. More
+    information on the
+    dataset can be found <a href="https://www.nature.com/articles/sdata201575#Abs1">here</a>. The agent was built using
+    Google Dialogflow and a Flask backend. For more details about the setup and technological aspects see the README
+    file.</p>
+<div id="agent-indicator">
+    <span id="try-out">Try me out!</span>
+    <span id="arrow">&rarr;</span>
+</div>
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+<df-messenger
+        intent="WELCOME"
+        chat-title="Forever Memory Bot"
+        agent-id="e02025b6-6c40-4595-b4fa-c8bc94fb4d2c"
+        language-code="en"
+></df-messenger>
+</body>
+</html>
