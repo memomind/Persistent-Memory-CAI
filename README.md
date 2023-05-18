@@ -28,11 +28,11 @@ We welcome contributions to this project. Whether it be adding features, finding
 
 Before making any changes, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository.
 
-## License
+<!-- ## License
 
 This project is licensed under the terms of the MIT license. 
 
-_For more information, please refer to the [LICENSE](LICENSE) file._
+_For more information, please refer to the [LICENSE](LICENSE) file._ -->
 
 <!-- ## Acknowledgements
 
